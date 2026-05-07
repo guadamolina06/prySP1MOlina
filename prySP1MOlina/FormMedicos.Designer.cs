@@ -22,6 +22,7 @@ namespace prySP1MOlina
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMedicos));
             this.lblMatricula = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblEspecialidad = new System.Windows.Forms.Label();
@@ -36,14 +37,9 @@ namespace prySP1MOlina
             this.lblMatricula.AutoSize = true;
             this.lblMatricula.Location = new System.Drawing.Point(20, 20);
             this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(54, 13);
+            this.lblMatricula.Size = new System.Drawing.Size(55, 13);
+            this.lblMatricula.TabIndex = 0;
             this.lblMatricula.Text = "Matrícula:";
-            // 
-            // txtMatricula
-            // 
-            this.txtMatricula.Location = new System.Drawing.Point(110, 17);
-            this.txtMatricula.Name = "txtMatricula";
-            this.txtMatricula.Size = new System.Drawing.Size(150, 20);
             // 
             // lblNombre
             // 
@@ -51,21 +47,31 @@ namespace prySP1MOlina
             this.lblNombre.Location = new System.Drawing.Point(20, 60);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(110, 57);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(150, 20);
             // 
             // lblEspecialidad
             // 
             this.lblEspecialidad.AutoSize = true;
             this.lblEspecialidad.Location = new System.Drawing.Point(20, 100);
             this.lblEspecialidad.Name = "lblEspecialidad";
-            this.lblEspecialidad.Size = new System.Drawing.Size(69, 13);
+            this.lblEspecialidad.Size = new System.Drawing.Size(70, 13);
+            this.lblEspecialidad.TabIndex = 4;
             this.lblEspecialidad.Text = "Especialidad:";
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.Location = new System.Drawing.Point(110, 17);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(150, 20);
+            this.txtMatricula.TabIndex = 1;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(110, 57);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(150, 20);
+            this.txtNombre.TabIndex = 3;
             // 
             // cmbEspecialidad
             // 
@@ -73,12 +79,14 @@ namespace prySP1MOlina
             this.cmbEspecialidad.Location = new System.Drawing.Point(110, 97);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
             this.cmbEspecialidad.Size = new System.Drawing.Size(150, 21);
+            this.cmbEspecialidad.TabIndex = 5;
             // 
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(110, 140);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 30);
+            this.btnGuardar.TabIndex = 6;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -93,10 +101,13 @@ namespace prySP1MOlina
             this.Controls.Add(this.lblEspecialidad);
             this.Controls.Add(this.cmbEspecialidad);
             this.Controls.Add(this.btnGuardar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMedicos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Médicos";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }
