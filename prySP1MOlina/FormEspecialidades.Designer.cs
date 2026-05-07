@@ -20,6 +20,7 @@ namespace prySP1MOlina
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEspecialidades));
             this.lblNumero = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
@@ -32,7 +33,7 @@ namespace prySP1MOlina
             this.lblNumero.AutoSize = true;
             this.lblNumero.Location = new System.Drawing.Point(20, 20);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(58, 16);
+            this.lblNumero.Size = new System.Drawing.Size(47, 13);
             this.lblNumero.TabIndex = 0;
             this.lblNumero.Text = "Número:";
             // 
@@ -41,7 +42,7 @@ namespace prySP1MOlina
             this.lblNombre.AutoSize = true;
             this.lblNombre.Location = new System.Drawing.Point(20, 60);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -49,14 +50,14 @@ namespace prySP1MOlina
             // 
             this.txtNumero.Location = new System.Drawing.Point(100, 17);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(150, 22);
+            this.txtNumero.Size = new System.Drawing.Size(150, 20);
             this.txtNumero.TabIndex = 1;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(100, 57);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(150, 22);
+            this.txtNombre.Size = new System.Drawing.Size(150, 20);
             this.txtNombre.TabIndex = 3;
             // 
             // btnGuardar
@@ -77,7 +78,9 @@ namespace prySP1MOlina
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnGuardar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormEspecialidades";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Especialidades";
             this.Load += new System.EventHandler(this.FormEspecialidades_Load);
             this.ResumeLayout(false);
